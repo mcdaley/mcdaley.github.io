@@ -18,8 +18,8 @@ title:      "Blog"
       <a class="list-group-item blog-post-link" href="{{ post.url | prepend: site.baseurl }}">
         <div class="media">
           <div class="media-left">
-            {% if post.image %}
-              <img class="media-object blog-blurb" src="{{ post.image }}" alt="{{ post.title }}"/>
+            {% if post.media_image %}
+              <img class="media-object blog-blurb" src="{{ post.media_image }}" alt="{{ post.title }}"/>
             {% else %}
               <img class="media-object blog-blurb" src="{{ site.default_post_image }}" alt="{{ post.title }}"/>
             {% endif %}
