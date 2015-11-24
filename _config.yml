@@ -1,6 +1,14 @@
+#------------------------------------------------------------------------------
+# File:     _config.yml
+#
+# Purpose:  Define global site variables
+#
+# NOTE:     NEED TO RESTART SERVER EVERY TIME THAT YOU CHANGE THIS FILE
+#------------------------------------------------------------------------------  
 # Site settings
 title:                CareerQB Blog
 home:                 CareerQB
+root_url:             "/"
 home_url:             "https://careerqb.com"
 email:                support@careerqb.com
 description:          > # this means to ignore newlines until "baseurl:"
