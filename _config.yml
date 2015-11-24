@@ -11,9 +11,12 @@ description:          > # this means to ignore newlines until "baseurl:"
 baseurl:              ""   # the subpath of your site, e.g. /blog/
 url:                  "https://careerqb.com"    # the base hostname & protocol for your site
 facebook_username:    "facebook"
+facebook_url:         "https://www.facebook.com/careerqb"
 linkedin_username:    "LinkedIn"
+linkedin_url:         "https://www.linkedin.com/company/careerqb"
 googleplus_username:  "Google Plus"
-
+googleplus_url:       "https://google.com/+Careerqb"
+default_post_image:   "/images/careerqb_post_logo.jpg"
 
 # Build settings
 markdown:             kramdown

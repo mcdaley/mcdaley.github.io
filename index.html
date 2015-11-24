@@ -1,24 +1,47 @@
 ---
 layout:     default
-title:      "Home"
+title:      "Blog"
 ---
 
 <div class="home">
   
-  <h1 class="post-heading">Posts</h1>
-
+  <!-- 
+    -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    -- TODO: 11/24/2015
+    -- REMOVED POSTS TITLE, NEED TO REPLACE WITH A NICE GRAPHIC
+    -- <h1 class="post-heading">Posts</h1>
+    -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    -->
+  
   <div class="list-group blog-post-summary">
     {% for post in site.posts %}
       <a class="list-group-item blog-post-link" href="{{ post.url | prepend: site.baseurl }}">
-        <h2>{{ post.title }}</h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <p>
-          Snippet...
-        </p>
+        <div class="media">
+          <div class="media-left">
+            {% if post.image %}
+              <img class="media-object blog-blurb" src="{{ post.image }}" alt="{{ post.title }}"/>
+            {% else %}
+              <img class="media-object blog-blurb" src="{{ site.default_post_image }}" alt="{{ post.title }}"/>
+            {% endif %}
+          </div>
+          <div class="media-body">
+            <h2 class="media-heading"> {{ post.title }}                     </h2>
+            <span class="post-meta">   {{ post.date | date: "%b %-d, %Y" }} </span>
+            <p>
+              {{ post.excerpt }}
+            </p>
+          </div>
+        </div>
       </a>
     {% endfor %}
-  </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- 
+    -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    -- TODO: 11/24/2015
+    -- COMMENTED OUT THE RSS FEED UNTIL I CAN GET THE BLOG FORMATTED AND IN PORDUCTION 
+    -- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  -->
 
 </div>

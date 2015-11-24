@@ -3,20 +3,24 @@
     <div class="col-sm-1 col-md-1 col-lg-1">
     </div>
     
-    <div class="col-sm-4 col-md-4 col-lg-4">
-      <a href="https://careerqb.com" target="_blank">
+    <div class="col-sm-3 col-md-3 col-lg-3">
+      <a href="https://careerqb.com">
         <h2 class="footer-title">{{ site.home }}</h2>
       </a>
       
       <div class="list-group blog-footer-social-links">
         
         {% if site.email %}
-          <a class="list-group-item blog-footer-list-group-item" 
-             href="mailto:{{ site.email }}">{{ site.email }}</a>
+          <a class="list-group-item blog-footer-list-group-item" href="mailto:{{ site.email }}">
+            <span>
+              <i class="fa fa-envelope-square"></i>
+            </span>
+            {{ site.email }}<br>
+          </a>
         {% endif %}
         
         {% if site.twitter_username %}
-          <a class="list-group-item blog-footer-list-group-item" href="#">
+          <a class="list-group-item blog-footer-list-group-item" href="{{ site.twitter_url }}">
             <span>
               <i class="fa fa-twitter-square"></i>
             </span>
@@ -25,27 +29,27 @@
         {% endif %}
     
         {% if site.facebook_username %}
-          <a class="list-group-item blog-footer-list-group-item" href="#">
+          <a class="list-group-item blog-footer-list-group-item" href="{{ site.facebook_url }}">
             <span>
-              <i class="fa fa-facebook-square"></i>
+              <i class="fa fa-facebook-square facebook-logo"></i>
             </span>
             {{ site.facebook_username }}<br>
           </a>
         {% endif %}
         
         {% if site.linkedin_username %}
-          <a class="list-group-item blog-footer-list-group-item" href="#">
+          <a class="list-group-item blog-footer-list-group-item" href="{{ site.linkedin_url }}">
             <span>
-              <i class="fa fa-linkedin-square"></i>
+              <i class="fa fa-linkedin-square linkedin-logo"></i>
             </span>
             {{ site.linkedin_username }}<br>
           </a>
         {% endif %}
         
         {% if site.googleplus_username %}
-          <a class="list-group-item blog-footer-list-group-item" href="#">
+          <a class="list-group-item blog-footer-list-group-item" href="{{ site.googleplus_url }}">
             <span>
-              <i class="fa fa-google-plus-square"></i>
+              <i class="fa fa-google-plus-square googleplus-logo"></i>
             </span>
             {{ site.googleplus_username }}<br>
           </a>
@@ -53,14 +57,21 @@
         
       </div>
     </div>
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <a href="https://careerqb.com/about" target="_blank">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <a href="https://careerqb.com/about">
         <h2 class="footer-title">About</h2>
       </a>
       
-      <p class="text">{{ site.description }}</p>
+      <div class="list-group blog-footer-social-links">
+        <a class="list-group-item blog-footer-list-group-item" 
+           href="https://careerqb.com/about">           Overview    </a>
+        
+        <a class="list-group-item blog-footer-list-group-item" 
+           href="https://careerqb.com/job_search/new">  Job Search  </a>
+      </div>
+      
     </div>
-    <div class="col-sm-1 col-md-1 col-lg-1">
+    <div class="col-sm-5 col-md-5 col-lg-5">
     </div>
   </div>
 </footer>

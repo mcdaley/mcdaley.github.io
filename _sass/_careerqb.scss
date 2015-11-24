@@ -49,14 +49,19 @@ ul.navbar-nav {
 //-----------------------------------------------------------------------------
 .blog-post-summary {
   h2 {
-    margin-top:               5px;
-    font-size:                1.2em;
+    margin-top:               0px;
+    font-size:                1.3em;
   }
 }
 
 .blog-post-link {
   margin-top:                 10px;
   margin-bottom:              10px;
+}
+
+.blog-blurb {
+  width:                      128px;
+  height:                     128px;
 }
 
 //-----------------------------------------------------------------------------
@@ -76,4 +81,21 @@ ul.navbar-nav {
     border:                   none;
     padding:                  5px 5px;
   }
+  
+  .facebook-logo {
+    color:                    $facebook;
+  }
+  
+  .linkedin-logo {
+    color:                    $linkedin;
+  }
+  
+  .googleplus-logo {
+    color:                    $googleplus;
+  }
+  
+  .twitter-logo {
+    color:                    $twitter;
+  }
+  
 }
