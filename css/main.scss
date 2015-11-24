@@ -1,0 +1,36 @@
+---
+# Twitter bootstrap file
+---
+
+/*
+ * Define global variables
+ */
+@import   "global_variables";
+
+/*
+ * Override bootstrap defaults
+ */
+$navbar-default-brand-color:        $qb-purple;
+$text-color:                        $qb-dark-gray;
+$link-color:                        $qb-purple;
+$link-hover-color:                  $qb-gray;
+$link-visited-color:                $qb-purple;
+
+a {
+  &:visited {
+    color:                          $qb-purple;
+    text-decoration:                none;
+  }
+}
+
+/*
+ * Import Twitter Bootstrap
+ */
+@import   "bootstrap";
+
+/*
+ * Import SASS Files from _sass directory
+ */
+@import   "careerqb",
+          "syntax-highlighting"
+;

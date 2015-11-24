@@ -1,0 +1,79 @@
+/******************************************************************************
+ * File:    _sass/_careerqb.scss
+ *
+ * Purpose: Sass styles for CareerQB blog
+ ******************************************************************************/
+
+//-----------------------------------------------------------------------------
+// Code syntaxt highlighting
+//-----------------------------------------------------------------------------
+$spacing-unit:                      30px;
+%vertical-rhythm {
+    margin-bottom:                  $spacing-unit / 2;
+}
+
+
+//-----------------------------------------------------------------------------
+// Navbar
+//-----------------------------------------------------------------------------
+.logo {
+  font-weight:                bold;
+}
+
+
+ul.navbar-nav {
+  li {
+    
+    .wedge {
+      margin:                 5px 0;
+      line-height:            40px;
+    }
+    
+    a.signup-btn {
+      padding-top:            5px;
+      padding-bottom:         5px;
+      margin-top:             10px;
+      margin-bottom:          10px;
+      font-weight:            bold;
+  
+      &:link 		{ color:            $qb-white; 		text-decoration: none; }
+      &:visited { color:            $qb-white; 		text-decoration: none; }
+      &:hover 	{ background-color: $qb-purple;   text-decoration: underline; }
+      &:active 	{ background-color: $qb-purple; }
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Blog post links
+//-----------------------------------------------------------------------------
+.blog-post-summary {
+  h2 {
+    margin-top:               5px;
+    font-size:                1.2em;
+  }
+}
+
+.blog-post-link {
+  margin-top:                 10px;
+  margin-bottom:              10px;
+}
+
+//-----------------------------------------------------------------------------
+// Footer
+//-----------------------------------------------------------------------------
+.blog-footer {
+  border-top:                 1px solid $qb-light-gray;
+  margin:                     20px 0;
+  padding-top:                20px;
+  
+  h2 {
+    margin:                   0 0 5px 0;
+    font-size:                1.2em;
+  }
+  
+  .blog-footer-list-group-item {
+    border:                   none;
+    padding:                  5px 5px;
+  }
+}

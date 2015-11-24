@@ -1,0 +1,66 @@
+<footer class="blog-footer">
+  <div class="row">
+    <div class="col-sm-1 col-md-1 col-lg-1">
+    </div>
+    
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <a href="https://careerqb.com" target="_blank">
+        <h2 class="footer-title">{{ site.home }}</h2>
+      </a>
+      
+      <div class="list-group blog-footer-social-links">
+        
+        {% if site.email %}
+          <a class="list-group-item blog-footer-list-group-item" 
+             href="mailto:{{ site.email }}">{{ site.email }}</a>
+        {% endif %}
+        
+        {% if site.twitter_username %}
+          <a class="list-group-item blog-footer-list-group-item" href="#">
+            <span>
+              <i class="fa fa-twitter-square"></i>
+            </span>
+            {{ site.twitter_username }}<br>
+          </a>
+        {% endif %}
+    
+        {% if site.facebook_username %}
+          <a class="list-group-item blog-footer-list-group-item" href="#">
+            <span>
+              <i class="fa fa-facebook-square"></i>
+            </span>
+            {{ site.facebook_username }}<br>
+          </a>
+        {% endif %}
+        
+        {% if site.linkedin_username %}
+          <a class="list-group-item blog-footer-list-group-item" href="#">
+            <span>
+              <i class="fa fa-linkedin-square"></i>
+            </span>
+            {{ site.linkedin_username }}<br>
+          </a>
+        {% endif %}
+        
+        {% if site.googleplus_username %}
+          <a class="list-group-item blog-footer-list-group-item" href="#">
+            <span>
+              <i class="fa fa-google-plus-square"></i>
+            </span>
+            {{ site.googleplus_username }}<br>
+          </a>
+        {% endif %}
+        
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <a href="https://careerqb.com/about" target="_blank">
+        <h2 class="footer-title">About</h2>
+      </a>
+      
+      <p class="text">{{ site.description }}</p>
+    </div>
+    <div class="col-sm-1 col-md-1 col-lg-1">
+    </div>
+  </div>
+</footer>

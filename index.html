@@ -1,7 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-  </body>
-</html>
+---
+layout:     default
+title:      "Home"
+---
+
+<div class="home">
+  
+  <h1 class="post-heading">Posts</h1>
+
+  <div class="list-group blog-post-summary">
+    {% for post in site.posts %}
+      <a class="list-group-item blog-post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <h2>{{ post.title }}</h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <p>
+          Snippet...
+        </p>
+      </a>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

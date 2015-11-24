@@ -1,0 +1,20 @@
+# Site settings
+title:                CareerQB Blog
+home:                 CareerQB
+home_url:             "https://careerqb.com"
+email:                support@careerqb.com
+description:          > # this means to ignore newlines until "baseurl:"
+  CareerQB's mission is to help people land jobs. Job searches can be 
+  overwhelming and stressful. We help people find their next job by 
+  providing tools to search multiple job search sites from one site 
+  and by providing tools to organize job searches.
+baseurl:              ""   # the subpath of your site, e.g. /blog/
+url:                  "https://careerqb.com"    # the base hostname & protocol for your site
+facebook_username:    "facebook"
+linkedin_username:    "LinkedIn"
+googleplus_username:  "Google Plus"
+
+
+# Build settings
+markdown:             kramdown
+highlighter:          pygments

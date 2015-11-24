@@ -1,0 +1,42 @@
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="{{ site.baseurl }}" target="_blank">CareerQB Blog</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav trigger">
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+          <li>
+            <a class="page-link" href="https://careerqb.com/en/job_search/new" target="_blank">
+              Job Search
+            </a>
+          </li>
+        </ul>
+              
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://careerqb.com/login">Sign In</a>
+          </li>
+          <li>
+            <a href="https://careerqb.com/sign_up" class="btn btn-success signup-btn">Sign Up</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
