@@ -64,6 +64,11 @@ ul.navbar-nav {
   height:                     128px;
 }
 
+a.tour-btn {
+  &:link 		{ color:            $qb-white; 		text-decoration: none; }
+  &:visited { color:            $qb-white; 		text-decoration: none; }
+}
+
 //-----------------------------------------------------------------------------
 // Footer
 //-----------------------------------------------------------------------------
