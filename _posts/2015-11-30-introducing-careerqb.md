@@ -14,9 +14,9 @@ excerpt:            "Searching for a new job is a lot of work and can be very
                      of providing the tools to help you organize your 
                      job search so you can land your dream job."
                      
-mobile_excerpt:     "Introducing CareerQB, a new job search site with the goal 
-                     of providing the tools to help you organize your 
-                     job search so you can land your dream job."
+mobile_excerpt:     "Introducing CareerQB, a new job search site that provides
+                     you the tools to help you organize your job search so you 
+                     can land your dream job."
 ---
 
 Searching for a new job is a lot of work and can be very stressful. It involves finding job openings, applying for jobs, preparing for interviews, and negotiating an offer. There are a lot of great job search websites and there are a lot of websites that offer great career advice, but none of the sites are focused on helping you with the hard work of organizing your job search. CareerQB is a new job search site with the goal of providing the tools to help you organize your job search so you can land your dream job.
