@@ -3,9 +3,8 @@ layout:             post
 title:              "Introducing CareerQB"
 author:             "Mike Daley"
 categories:         careerqb
-media_image:        "/images/posts/careerqb/2015-11-18/introducing-careerqb/job_search_new_icon_01.jpg"
-post_image:         "/images/posts/careerqb/2015-11-18/introducing-careerqb/job_search_new_570px.jpg"
-media_image_400px:  "/images/posts/careerqb/2015-11-18/introducing-careerqb/job_search_new_570px.jpg"
+media_image:        "/images/posts/careerqb/2015-11-30/introducing-careerqb/job_search_new_icon_01.jpg"
+post_image:         "/images/posts/careerqb/2015-11-30/introducing-careerqb/job_search_new_570px.jpg"
 
 excerpt_separator:   <!--more-->
 excerpt:            "Searching for a new job is a lot of work and can be very 
