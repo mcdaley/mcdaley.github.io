@@ -5,11 +5,17 @@ author:             "Mike Daley"
 categories:         careerqb
 media_image:        "/images/posts/careerqb/2015-11-18/introducing-careerqb/job_search_new_icon_01.jpg"
 post_image:         "/images/posts/careerqb/2015-11-18/introducing-careerqb/job_search_new_570px.jpg"
+media_image_400px:  "/images/posts/careerqb/2015-11-18/introducing-careerqb/job_search_new_570px.jpg"
+
 excerpt_separator:   <!--more-->
 excerpt:            "Searching for a new job is a lot of work and can be very 
                      stressful. It involves finding job openings, applying 
                      for jobs, preparing for interviews, and negotiating an 
                      offer. CareerQB is a new job search site with the goal 
+                     of providing the tools to help you organize your 
+                     job search so you can land your dream job."
+                     
+mobile_excerpt:     "Introducing CareerQB, a new job search site with the goal 
                      of providing the tools to help you organize your 
                      job search so you can land your dream job."
 ---

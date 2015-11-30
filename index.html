@@ -28,8 +28,16 @@ navbar:     "Blog"
           <div class="media-body">
             <h2 class="media-heading"> {{ post.title }}                     </h2>
             <span class="post-meta">   {{ post.date | date: "%b %-d, %Y" }} </span>
-            <p>
+            <!-- Show shorter excerpt for mobile devices -->
+            <p class="hidden-xs">
               {{ post.excerpt }}
+            </p>
+            <p class="visible-xs">
+              {% if post.mobile_excerpt %}
+                {{ post.mobile_excerpt }}
+              {% else %}
+                {{ post.excerpt }}
+              {% endif %}
             </p>
           </div>
         </div>
